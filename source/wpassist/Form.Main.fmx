@@ -1,0 +1,219 @@
+object Main: TMain
+  Left = 0
+  Top = 0
+  Caption = 'XTouch '#48373#51648#52852#46300' '#46020#50864#48120
+  ClientHeight = 576
+  ClientWidth = 768
+  Position = ScreenCenter
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Rectangle: TRectangle
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+  end
+  object Layout: TLayout
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object AddEmp: TRoundRect
+      Position.X = 140.000000000000000000
+      Position.Y = 19.000000000000000000
+      Size.Width = 500.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = AddEmpClick
+      object Text1: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 500.000000000000000000
+        Size.Height = 169.000000000000000000
+        Size.PlatformDefault = False
+        Text = #48373#51648#52852#46300' '#46321#47197
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object Config: TRoundRect
+      Position.X = 140.000000000000000000
+      Position.Y = 203.000000000000000000
+      Size.Width = 505.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = ConfigClick
+      object Text2: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 505.000000000000000000
+        Size.Height = 169.000000000000000000
+        Size.PlatformDefault = False
+        Text = #54872#44221#49444#51221
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+    object btnClose: TRoundRect
+      Fill.Color = claNull
+      Position.X = 140.000000000000000000
+      Position.Y = 387.000000000000000000
+      Size.Width = 505.000000000000000000
+      Size.Height = 169.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = btnCloseClick
+      object Text3: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 505.000000000000000000
+        Size.Height = 169.000000000000000000
+        Size.PlatformDefault = False
+        Text = #51333#47308
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 50.000000000000000000
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+      end
+    end
+  end
+  object LoginLayout: TLayout
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Label1: TLabel
+      StyledSettings = [Style, FontColor]
+      Position.X = 202.000000000000000000
+      Position.Y = 148.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'ID'
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      StyledSettings = [Style, FontColor]
+      Position.X = 202.000000000000000000
+      Position.Y = 248.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'PW'
+      TabOrder = 0
+    end
+    object edtID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 30.000000000000000000
+      Position.X = 320.000000000000000000
+      Position.Y = 148.000000000000000000
+      Size.Width = 230.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnKeyDown = edtIDKeyDown
+    end
+    object edtPW: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Password = True
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 30.000000000000000000
+      Position.X = 320.000000000000000000
+      Position.Y = 248.000000000000000000
+      Size.Width = 230.000000000000000000
+      Size.Height = 60.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Style, FontColor]
+      OnKeyDown = edtPWKeyDown
+    end
+    object Rectangle1: TRectangle
+      Fill.Color = xFF555555
+      Position.X = 194.000000000000000000
+      Position.Y = 376.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      OnClick = Rectangle1Click
+      object Text4: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 180.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        Text = #51333#47308
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.FontColor = claWhite
+      end
+    end
+    object Rectangle2: TRectangle
+      Fill.Color = xFF555555
+      Position.X = 389.000000000000000000
+      Position.Y = 376.000000000000000000
+      Size.Width = 180.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      OnClick = Rectangle2Click
+      object Text5: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 180.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        Text = #54869#51064
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.FontColor = claWhite
+      end
+    end
+  end
+  object Indy: TIdHTTP
+    IOHandler = IndySSL
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 48
+    Top = 40
+  end
+  object IndySSL: TIdSSLIOHandlerSocketOpenSSL
+    MaxLineAction = maException
+    Port = 0
+    DefaultPort = 0
+    SSLOptions.Method = sslvSSLv23
+    SSLOptions.SSLVersions = [sslvSSLv2, sslvSSLv3, sslvTLSv1, sslvTLSv1_1, sslvTLSv1_2]
+    SSLOptions.Mode = sslmClient
+    SSLOptions.VerifyMode = []
+    SSLOptions.VerifyDepth = 0
+    Left = 48
+    Top = 96
+  end
+end

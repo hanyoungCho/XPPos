@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F10DA1E4-1E90-4409-AF43-9181DF806EB9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="launcher\XGLauncher.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mobilead_eloom\ELMobileAD.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tbagent\XGTeeBoxAgent.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XGLauncher">
+        <MSBuild Projects="launcher\XGLauncher.dproj"/>
+    </Target>
+    <Target Name="XGLauncher:Clean">
+        <MSBuild Projects="launcher\XGLauncher.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGLauncher:Make">
+        <MSBuild Projects="launcher\XGLauncher.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ELMobileAD">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj"/>
+    </Target>
+    <Target Name="ELMobileAD:Clean">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ELMobileAD:Make">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent:Clean">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent:Make">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XGLauncher;ELMobileAD;XGTeeBoxAgent"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XGLauncher:Clean;ELMobileAD:Clean;XGTeeBoxAgent:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XGLauncher:Make;ELMobileAD:Make;XGTeeBoxAgent:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

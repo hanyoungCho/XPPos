@@ -1,0 +1,552 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6E6EC991-6B86-4244-AD25-E38AFAF7EAD9}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="launcher\XGLauncher.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="admincall\XGAdminCall.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mobilead\XGMobileAD.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="mobilead_eloom\ELMobileAD.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="tbagent\XGTeeBoxAgent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="common\XGGlobal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="posmain\XGPOS.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\Affiliate\XGAffiliate.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\AppCardScan\XGAppCardScan.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\CafeSubView\XGCafeSubView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\CardApprove\XGCardApprove.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\CashApprove\XGCashApprove.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\ChequeApprove\XGChequeApprove.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\Config\XGConfig.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\ConfigLocal\XGConfigLocal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\CouponCard\XGCouponCard.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\DashBoard\XGDashboard.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\Locker\XGLocker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\Member\XGMember.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\MemberSearchList\XGMemberSearchList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\NoticeView\XGNoticeView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\NumPad\XGNumPad.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\PendingView\XGPendingView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\Prepare\XGPrepare.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\ProductList\XGProductList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\ReceiptView\XGReceiptView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\SalePos\XGSalePos.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\SalePosCafe\XGSalePosCafe.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\SalePosTable\XGSalePosTable.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\Stamp\XGStamp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxChange\XGTeeBoxChange.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\TeeBoxMove\XGTeeBoxMove.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxProdChange\XGTeeBoxProdChange.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\TeeBoxProdList\XGTeeBoxProdList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Plugin\TeeBoxProdMember\XGTeeBoxProdMember.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxReserveList\XGTeeBoxReserveList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxScoreBoard\XGTeeBoxScoreBoard.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxSubView\XGTeeBoxSubView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxSubView_Hgland\XGTeeBoxSubView_Hgland.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxView\XGTeeBoxView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\TeeBoxView\XGTeeBoxViewER.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\Weather\XGWeather.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\WebCam\XGWebCam.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="plugin\WebView\XGWebView.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XGLauncher">
+        <MSBuild Projects="launcher\XGLauncher.dproj"/>
+    </Target>
+    <Target Name="XGLauncher:Clean">
+        <MSBuild Projects="launcher\XGLauncher.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGLauncher:Make">
+        <MSBuild Projects="launcher\XGLauncher.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGAdminCall">
+        <MSBuild Projects="admincall\XGAdminCall.dproj"/>
+    </Target>
+    <Target Name="XGAdminCall:Clean">
+        <MSBuild Projects="admincall\XGAdminCall.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGAdminCall:Make">
+        <MSBuild Projects="admincall\XGAdminCall.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGMobileAD">
+        <MSBuild Projects="mobilead\XGMobileAD.dproj"/>
+    </Target>
+    <Target Name="XGMobileAD:Clean">
+        <MSBuild Projects="mobilead\XGMobileAD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGMobileAD:Make">
+        <MSBuild Projects="mobilead\XGMobileAD.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ELMobileAD">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj"/>
+    </Target>
+    <Target Name="ELMobileAD:Clean">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ELMobileAD:Make">
+        <MSBuild Projects="mobilead_eloom\ELMobileAD.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent:Clean">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxAgent:Make">
+        <MSBuild Projects="tbagent\XGTeeBoxAgent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGGlobal">
+        <MSBuild Projects="common\XGGlobal.dproj"/>
+    </Target>
+    <Target Name="XGGlobal:Clean">
+        <MSBuild Projects="common\XGGlobal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGGlobal:Make">
+        <MSBuild Projects="common\XGGlobal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGPOS">
+        <MSBuild Projects="posmain\XGPOS.dproj"/>
+    </Target>
+    <Target Name="XGPOS:Clean">
+        <MSBuild Projects="posmain\XGPOS.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGPOS:Make">
+        <MSBuild Projects="posmain\XGPOS.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGAffiliate">
+        <MSBuild Projects="plugin\Affiliate\XGAffiliate.dproj"/>
+    </Target>
+    <Target Name="XGAffiliate:Clean">
+        <MSBuild Projects="plugin\Affiliate\XGAffiliate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGAffiliate:Make">
+        <MSBuild Projects="plugin\Affiliate\XGAffiliate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGAppCardScan">
+        <MSBuild Projects="plugin\AppCardScan\XGAppCardScan.dproj"/>
+    </Target>
+    <Target Name="XGAppCardScan:Clean">
+        <MSBuild Projects="plugin\AppCardScan\XGAppCardScan.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGAppCardScan:Make">
+        <MSBuild Projects="plugin\AppCardScan\XGAppCardScan.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGCafeSubView">
+        <MSBuild Projects="plugin\CafeSubView\XGCafeSubView.dproj"/>
+    </Target>
+    <Target Name="XGCafeSubView:Clean">
+        <MSBuild Projects="plugin\CafeSubView\XGCafeSubView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGCafeSubView:Make">
+        <MSBuild Projects="plugin\CafeSubView\XGCafeSubView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGCardApprove">
+        <MSBuild Projects="Plugin\CardApprove\XGCardApprove.dproj"/>
+    </Target>
+    <Target Name="XGCardApprove:Clean">
+        <MSBuild Projects="Plugin\CardApprove\XGCardApprove.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGCardApprove:Make">
+        <MSBuild Projects="Plugin\CardApprove\XGCardApprove.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGCashApprove">
+        <MSBuild Projects="Plugin\CashApprove\XGCashApprove.dproj"/>
+    </Target>
+    <Target Name="XGCashApprove:Clean">
+        <MSBuild Projects="Plugin\CashApprove\XGCashApprove.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGCashApprove:Make">
+        <MSBuild Projects="Plugin\CashApprove\XGCashApprove.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGChequeApprove">
+        <MSBuild Projects="Plugin\ChequeApprove\XGChequeApprove.dproj"/>
+    </Target>
+    <Target Name="XGChequeApprove:Clean">
+        <MSBuild Projects="Plugin\ChequeApprove\XGChequeApprove.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGChequeApprove:Make">
+        <MSBuild Projects="Plugin\ChequeApprove\XGChequeApprove.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGConfig">
+        <MSBuild Projects="plugin\Config\XGConfig.dproj"/>
+    </Target>
+    <Target Name="XGConfig:Clean">
+        <MSBuild Projects="plugin\Config\XGConfig.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGConfig:Make">
+        <MSBuild Projects="plugin\Config\XGConfig.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGConfigLocal">
+        <MSBuild Projects="plugin\ConfigLocal\XGConfigLocal.dproj"/>
+    </Target>
+    <Target Name="XGConfigLocal:Clean">
+        <MSBuild Projects="plugin\ConfigLocal\XGConfigLocal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGConfigLocal:Make">
+        <MSBuild Projects="plugin\ConfigLocal\XGConfigLocal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGCouponCard">
+        <MSBuild Projects="plugin\CouponCard\XGCouponCard.dproj"/>
+    </Target>
+    <Target Name="XGCouponCard:Clean">
+        <MSBuild Projects="plugin\CouponCard\XGCouponCard.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGCouponCard:Make">
+        <MSBuild Projects="plugin\CouponCard\XGCouponCard.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGDashboard">
+        <MSBuild Projects="plugin\DashBoard\XGDashboard.dproj"/>
+    </Target>
+    <Target Name="XGDashboard:Clean">
+        <MSBuild Projects="plugin\DashBoard\XGDashboard.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGDashboard:Make">
+        <MSBuild Projects="plugin\DashBoard\XGDashboard.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGLocker">
+        <MSBuild Projects="Plugin\Locker\XGLocker.dproj"/>
+    </Target>
+    <Target Name="XGLocker:Clean">
+        <MSBuild Projects="Plugin\Locker\XGLocker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGLocker:Make">
+        <MSBuild Projects="Plugin\Locker\XGLocker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGMember">
+        <MSBuild Projects="Plugin\Member\XGMember.dproj"/>
+    </Target>
+    <Target Name="XGMember:Clean">
+        <MSBuild Projects="Plugin\Member\XGMember.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGMember:Make">
+        <MSBuild Projects="Plugin\Member\XGMember.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGMemberSearchList">
+        <MSBuild Projects="plugin\MemberSearchList\XGMemberSearchList.dproj"/>
+    </Target>
+    <Target Name="XGMemberSearchList:Clean">
+        <MSBuild Projects="plugin\MemberSearchList\XGMemberSearchList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGMemberSearchList:Make">
+        <MSBuild Projects="plugin\MemberSearchList\XGMemberSearchList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGNoticeView">
+        <MSBuild Projects="plugin\NoticeView\XGNoticeView.dproj"/>
+    </Target>
+    <Target Name="XGNoticeView:Clean">
+        <MSBuild Projects="plugin\NoticeView\XGNoticeView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGNoticeView:Make">
+        <MSBuild Projects="plugin\NoticeView\XGNoticeView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGNumPad">
+        <MSBuild Projects="plugin\NumPad\XGNumPad.dproj"/>
+    </Target>
+    <Target Name="XGNumPad:Clean">
+        <MSBuild Projects="plugin\NumPad\XGNumPad.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGNumPad:Make">
+        <MSBuild Projects="plugin\NumPad\XGNumPad.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGPendingView">
+        <MSBuild Projects="Plugin\PendingView\XGPendingView.dproj"/>
+    </Target>
+    <Target Name="XGPendingView:Clean">
+        <MSBuild Projects="Plugin\PendingView\XGPendingView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGPendingView:Make">
+        <MSBuild Projects="Plugin\PendingView\XGPendingView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGPrepare">
+        <MSBuild Projects="Plugin\Prepare\XGPrepare.dproj"/>
+    </Target>
+    <Target Name="XGPrepare:Clean">
+        <MSBuild Projects="Plugin\Prepare\XGPrepare.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGPrepare:Make">
+        <MSBuild Projects="Plugin\Prepare\XGPrepare.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGProductList">
+        <MSBuild Projects="plugin\ProductList\XGProductList.dproj"/>
+    </Target>
+    <Target Name="XGProductList:Clean">
+        <MSBuild Projects="plugin\ProductList\XGProductList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGProductList:Make">
+        <MSBuild Projects="plugin\ProductList\XGProductList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGReceiptView">
+        <MSBuild Projects="Plugin\ReceiptView\XGReceiptView.dproj"/>
+    </Target>
+    <Target Name="XGReceiptView:Clean">
+        <MSBuild Projects="Plugin\ReceiptView\XGReceiptView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGReceiptView:Make">
+        <MSBuild Projects="Plugin\ReceiptView\XGReceiptView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGSalePos">
+        <MSBuild Projects="plugin\SalePos\XGSalePos.dproj"/>
+    </Target>
+    <Target Name="XGSalePos:Clean">
+        <MSBuild Projects="plugin\SalePos\XGSalePos.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGSalePos:Make">
+        <MSBuild Projects="plugin\SalePos\XGSalePos.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGSalePosCafe">
+        <MSBuild Projects="plugin\SalePosCafe\XGSalePosCafe.dproj"/>
+    </Target>
+    <Target Name="XGSalePosCafe:Clean">
+        <MSBuild Projects="plugin\SalePosCafe\XGSalePosCafe.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGSalePosCafe:Make">
+        <MSBuild Projects="plugin\SalePosCafe\XGSalePosCafe.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGSalePosTable">
+        <MSBuild Projects="plugin\SalePosTable\XGSalePosTable.dproj"/>
+    </Target>
+    <Target Name="XGSalePosTable:Clean">
+        <MSBuild Projects="plugin\SalePosTable\XGSalePosTable.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGSalePosTable:Make">
+        <MSBuild Projects="plugin\SalePosTable\XGSalePosTable.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGStamp">
+        <MSBuild Projects="plugin\Stamp\XGStamp.dproj"/>
+    </Target>
+    <Target Name="XGStamp:Clean">
+        <MSBuild Projects="plugin\Stamp\XGStamp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGStamp:Make">
+        <MSBuild Projects="plugin\Stamp\XGStamp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxChange">
+        <MSBuild Projects="plugin\TeeBoxChange\XGTeeBoxChange.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxChange:Clean">
+        <MSBuild Projects="plugin\TeeBoxChange\XGTeeBoxChange.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxChange:Make">
+        <MSBuild Projects="plugin\TeeBoxChange\XGTeeBoxChange.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxMove">
+        <MSBuild Projects="Plugin\TeeBoxMove\XGTeeBoxMove.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxMove:Clean">
+        <MSBuild Projects="Plugin\TeeBoxMove\XGTeeBoxMove.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxMove:Make">
+        <MSBuild Projects="Plugin\TeeBoxMove\XGTeeBoxMove.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxProdChange">
+        <MSBuild Projects="plugin\TeeBoxProdChange\XGTeeBoxProdChange.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxProdChange:Clean">
+        <MSBuild Projects="plugin\TeeBoxProdChange\XGTeeBoxProdChange.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxProdChange:Make">
+        <MSBuild Projects="plugin\TeeBoxProdChange\XGTeeBoxProdChange.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxProdList">
+        <MSBuild Projects="Plugin\TeeBoxProdList\XGTeeBoxProdList.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxProdList:Clean">
+        <MSBuild Projects="Plugin\TeeBoxProdList\XGTeeBoxProdList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxProdList:Make">
+        <MSBuild Projects="Plugin\TeeBoxProdList\XGTeeBoxProdList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxProdMember">
+        <MSBuild Projects="Plugin\TeeBoxProdMember\XGTeeBoxProdMember.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxProdMember:Clean">
+        <MSBuild Projects="Plugin\TeeBoxProdMember\XGTeeBoxProdMember.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxProdMember:Make">
+        <MSBuild Projects="Plugin\TeeBoxProdMember\XGTeeBoxProdMember.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxReserveList">
+        <MSBuild Projects="plugin\TeeBoxReserveList\XGTeeBoxReserveList.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxReserveList:Clean">
+        <MSBuild Projects="plugin\TeeBoxReserveList\XGTeeBoxReserveList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxReserveList:Make">
+        <MSBuild Projects="plugin\TeeBoxReserveList\XGTeeBoxReserveList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxScoreBoard">
+        <MSBuild Projects="plugin\TeeBoxScoreBoard\XGTeeBoxScoreBoard.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxScoreBoard:Clean">
+        <MSBuild Projects="plugin\TeeBoxScoreBoard\XGTeeBoxScoreBoard.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxScoreBoard:Make">
+        <MSBuild Projects="plugin\TeeBoxScoreBoard\XGTeeBoxScoreBoard.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView">
+        <MSBuild Projects="plugin\TeeBoxSubView\XGTeeBoxSubView.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView:Clean">
+        <MSBuild Projects="plugin\TeeBoxSubView\XGTeeBoxSubView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView:Make">
+        <MSBuild Projects="plugin\TeeBoxSubView\XGTeeBoxSubView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView_Hgland">
+        <MSBuild Projects="plugin\TeeBoxSubView_Hgland\XGTeeBoxSubView_Hgland.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView_Hgland:Clean">
+        <MSBuild Projects="plugin\TeeBoxSubView_Hgland\XGTeeBoxSubView_Hgland.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxSubView_Hgland:Make">
+        <MSBuild Projects="plugin\TeeBoxSubView_Hgland\XGTeeBoxSubView_Hgland.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxView">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxView.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxView:Clean">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxView:Make">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGTeeBoxViewER">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxViewER.dproj"/>
+    </Target>
+    <Target Name="XGTeeBoxViewER:Clean">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxViewER.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGTeeBoxViewER:Make">
+        <MSBuild Projects="plugin\TeeBoxView\XGTeeBoxViewER.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGWeather">
+        <MSBuild Projects="plugin\Weather\XGWeather.dproj"/>
+    </Target>
+    <Target Name="XGWeather:Clean">
+        <MSBuild Projects="plugin\Weather\XGWeather.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGWeather:Make">
+        <MSBuild Projects="plugin\Weather\XGWeather.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGWebCam">
+        <MSBuild Projects="plugin\WebCam\XGWebCam.dproj"/>
+    </Target>
+    <Target Name="XGWebCam:Clean">
+        <MSBuild Projects="plugin\WebCam\XGWebCam.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGWebCam:Make">
+        <MSBuild Projects="plugin\WebCam\XGWebCam.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XGWebView">
+        <MSBuild Projects="plugin\WebView\XGWebView.dproj"/>
+    </Target>
+    <Target Name="XGWebView:Clean">
+        <MSBuild Projects="plugin\WebView\XGWebView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XGWebView:Make">
+        <MSBuild Projects="plugin\WebView\XGWebView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XGLauncher;XGAdminCall;XGMobileAD;ELMobileAD;XGTeeBoxAgent;XGGlobal;XGPOS;XGAffiliate;XGAppCardScan;XGCafeSubView;XGCardApprove;XGCashApprove;XGChequeApprove;XGConfig;XGConfigLocal;XGCouponCard;XGDashboard;XGLocker;XGMember;XGMemberSearchList;XGNoticeView;XGNumPad;XGPendingView;XGPrepare;XGProductList;XGReceiptView;XGSalePos;XGSalePosCafe;XGSalePosTable;XGStamp;XGTeeBoxChange;XGTeeBoxMove;XGTeeBoxProdChange;XGTeeBoxProdList;XGTeeBoxProdMember;XGTeeBoxReserveList;XGTeeBoxScoreBoard;XGTeeBoxSubView;XGTeeBoxSubView_Hgland;XGTeeBoxView;XGTeeBoxViewER;XGWeather;XGWebCam;XGWebView"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XGLauncher:Clean;XGAdminCall:Clean;XGMobileAD:Clean;ELMobileAD:Clean;XGTeeBoxAgent:Clean;XGGlobal:Clean;XGPOS:Clean;XGAffiliate:Clean;XGAppCardScan:Clean;XGCafeSubView:Clean;XGCardApprove:Clean;XGCashApprove:Clean;XGChequeApprove:Clean;XGConfig:Clean;XGConfigLocal:Clean;XGCouponCard:Clean;XGDashboard:Clean;XGLocker:Clean;XGMember:Clean;XGMemberSearchList:Clean;XGNoticeView:Clean;XGNumPad:Clean;XGPendingView:Clean;XGPrepare:Clean;XGProductList:Clean;XGReceiptView:Clean;XGSalePos:Clean;XGSalePosCafe:Clean;XGSalePosTable:Clean;XGStamp:Clean;XGTeeBoxChange:Clean;XGTeeBoxMove:Clean;XGTeeBoxProdChange:Clean;XGTeeBoxProdList:Clean;XGTeeBoxProdMember:Clean;XGTeeBoxReserveList:Clean;XGTeeBoxScoreBoard:Clean;XGTeeBoxSubView:Clean;XGTeeBoxSubView_Hgland:Clean;XGTeeBoxView:Clean;XGTeeBoxViewER:Clean;XGWeather:Clean;XGWebCam:Clean;XGWebView:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XGLauncher:Make;XGAdminCall:Make;XGMobileAD:Make;ELMobileAD:Make;XGTeeBoxAgent:Make;XGGlobal:Make;XGPOS:Make;XGAffiliate:Make;XGAppCardScan:Make;XGCafeSubView:Make;XGCardApprove:Make;XGCashApprove:Make;XGChequeApprove:Make;XGConfig:Make;XGConfigLocal:Make;XGCouponCard:Make;XGDashboard:Make;XGLocker:Make;XGMember:Make;XGMemberSearchList:Make;XGNoticeView:Make;XGNumPad:Make;XGPendingView:Make;XGPrepare:Make;XGProductList:Make;XGReceiptView:Make;XGSalePos:Make;XGSalePosCafe:Make;XGSalePosTable:Make;XGStamp:Make;XGTeeBoxChange:Make;XGTeeBoxMove:Make;XGTeeBoxProdChange:Make;XGTeeBoxProdList:Make;XGTeeBoxProdMember:Make;XGTeeBoxReserveList:Make;XGTeeBoxScoreBoard:Make;XGTeeBoxSubView:Make;XGTeeBoxSubView_Hgland:Make;XGTeeBoxView:Make;XGTeeBoxViewER:Make;XGWeather:Make;XGWebCam:Make;XGWebView:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

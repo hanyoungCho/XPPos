@@ -1,0 +1,77 @@
+package XGGlobal;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE RELEASE}
+{$ENDIF IMPLICITBUILDING}
+{$DESCRIPTION 'SolbiPOS Framework Common Library'}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclwinx,
+  SBPluginR280,
+  SBVCL280,
+  soaprtl,
+  unidac280,
+  dac280,
+  vclAbsDBd28,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  TMSVCLUIPackPkgDXE14,
+  cxLibraryRS28,
+  cxGridRS28,
+  dxBarRS28,
+  dxmdsRS28,
+  WebViewP,
+  CCPack,
+  ScrCamR280;
+
+contains
+  uXGClientDM in 'uXGClientDM.pas' {ClientDM: TDataModule},
+  uXGGlobal in 'uXGGlobal.pas',
+  uXGCommonLib in 'uXGCommonLib.pas',
+  uXGSaleManager in 'uXGSaleManager.pas',
+  uXGWaitMsg in 'uXGWaitMsg.pas' {XGWaitMsgForm},
+  uXGMsgBox in 'uXGMsgBox.pas' {XGMsgBoxForm},
+  uLayeredForm in 'uLayeredForm.pas' {LayeredForm},
+  uXGMemberPopup in 'uXGMemberPopup.pas' {XGMemberPopupForm},
+  uXGReceiptPrint in 'uXGReceiptPrint.pas',
+  uXGCalendar in 'uXGCalendar.pas' {XGCalendarForm},
+  uXGZipCode in 'uXGZipCode.pas' {XGZipCodeForm},
+  uNBioBSPHelper in 'uNBioBSPHelper.pas',
+  uUCBioBSPHelper in 'uUCBioBSPHelper.pas',
+  uXGRefreshClubCoupon in 'uXGRefreshClubCoupon.pas' {XGRefreshClubCouponForm},
+  uXGAddonTicket in 'uXGAddonTicket.pas' {XGAddonTicketForm},
+  uXGInputBox in 'uXGInputBox.pas' {XGInputBoxForm},
+  uLayeredWindow in 'uLayeredWindow.pas',
+  uXGReceiptPreview in 'uXGReceiptPreview.pas' {XGReceiptPreviewForm},
+  uXGCalc in 'uXGCalc.pas' {XGCalcForm},
+  uPaycoNewModule in 'van\uPaycoNewModule.pas',
+  uXGSaleTableContainer in 'uXGSaleTableContainer.pas' {XGSaleTableContainer: TBox};
+
+end.

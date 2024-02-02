@@ -1,0 +1,64 @@
+object WaitMsgForm: TWaitMsgForm
+  Left = 0
+  Top = 0
+  Cursor = crHourGlass
+  BorderStyle = bsNone
+  Caption = 'WaitMsgForm'
+  ClientHeight = 200
+  ClientWidth = 320
+  Color = 16711422
+  DoubleBuffered = True
+  Font.Charset = HANGEUL_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = #44404#47548
+  Font.Style = []
+  Position = poMainFormCenter
+  StyleElements = [seBorder]
+  PixelsPerInch = 96
+  TextHeight = 13
+  object shpBorder: TShape
+    Left = 0
+    Top = 0
+    Width = 320
+    Height = 200
+    Align = alClient
+    Pen.Color = 16744448
+    ExplicitLeft = 32
+    ExplicitTop = 24
+    ExplicitWidth = 65
+    ExplicitHeight = 65
+  end
+  object lblMessage: TLabel
+    Left = 10
+    Top = 149
+    Width = 300
+    Height = 44
+    Cursor = crHourGlass
+    Margins.Left = 10
+    Margins.Top = 0
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Alignment = taCenter
+    AutoSize = False
+    Caption = #51104#49884#47564' '#44592#45796#47140' '#51452#49901#49884#50724'.'
+    Transparent = False
+    Layout = tlCenter
+    OnMouseMove = OnMouseMove
+  end
+  object dxActivityIndicator: TdxActivityIndicator
+    AlignWithMargins = True
+    Left = 90
+    Top = 15
+    Width = 140
+    Height = 140
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    PropertiesClassName = 'TdxActivityIndicatorElasticCircleProperties'
+    Properties.ArcColor = -16744193
+    Properties.ArcThickness = 10
+    Transparent = True
+  end
+end

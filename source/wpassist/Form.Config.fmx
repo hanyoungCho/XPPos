@@ -1,0 +1,243 @@
+object FormConfig: TFormConfig
+  Left = 0
+  Top = 0
+  Caption = 'XTouch '#48373#51648#52852#46300' '#46020#50864#48120
+  ClientHeight = 576
+  ClientWidth = 768
+  Position = MainFormCenter
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout: TLayout
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 576.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Rectangle2: TRectangle
+      Align = Client
+      Size.Width = 768.000000000000000000
+      Size.Height = 576.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      object Rectangle1: TRectangle
+        Fill.Color = claNull
+        Position.X = 72.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 641.000000000000000000
+        Size.Height = 313.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 0.000000000000000000
+        object Label1: TLabel
+          StyledSettings = [Style, FontColor]
+          Size.Width = 150.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = 'API '#49436#48260' '#51452#49548
+          TabOrder = 0
+        end
+        object Label2: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.Y = 60.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = #53364#46972#51060#50616#53944' ID'
+          TabOrder = 1
+        end
+        object Label3: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.Y = 120.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = #51064#51613' '#53412
+          TabOrder = 2
+        end
+        object Label4: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.Y = 180.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = 'RFID PORT'
+          TabOrder = 3
+        end
+        object Label5: TLabel
+          StyledSettings = [Style, FontColor]
+          Position.Y = 240.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Text = 'RFID BaudRate'
+          TabOrder = 4
+        end
+        object edtUrl: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 5
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Position.X = 160.000000000000000000
+          Size.Width = 400.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+        end
+        object edtID: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 6
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Position.X = 160.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+        end
+        object edtKey: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 7
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          Position.X = 160.000000000000000000
+          Position.Y = 120.000000000000000000
+          Size.Width = 400.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+        end
+        object edtPort: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 8
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Position.X = 160.000000000000000000
+          Position.Y = 180.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+        end
+        object edtBaudRate: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 9
+          Text = '9600'
+          TextSettings.Font.Family = 'Noto Sans CJK KR'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.HorzAlign = Center
+          Position.X = 160.000000000000000000
+          Position.Y = 240.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 33.000000000000000000
+          Size.PlatformDefault = False
+          StyledSettings = [Style, FontColor]
+        end
+      end
+      object Image1: TImage
+        MultiResBitmap = <
+          item
+            Width = 50
+            Height = 50
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000320000003208060000001E3F88
+              B1000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0548494441546843DD5A4D4C1B47181D8F713136C504874829049A0629158183
+              4925AA54ED05879C9C4B0B6A4F952AC4CF9553A428895255EAA9B955FCAAD756
+              4E7BA1A0DAE00A29D054951A2CD50D6A2452B003CD8198600BFF80B1DDEF2DC3
+              8FC136B6D7C4DE3C69E5DD6F56F67BE3D999EF9BB72A261356AB55BDB6B6F651
+              494949473C1EFF980E835EAF0F190C0635C54ADE20E0BE2DC236C1E7F3450381
+              4059341AF56B349A1F2974BFAAAAEA4167676754FAC21C91B390D1D1511391BE
+              130A85AE12E9C83BE7CF97D7D4D4A82B2A2AC41DE9E1F7FBD9CACA4AF4DFC5C5
+              0D12A7292B2B9B52A95477BBBABA9CE296AC90B590818181B7A9A3EFD18F5E7B
+              F7E2456D7D7D3D2712A23537506730B7DB1DFBE7C99330758E9DFEA5FEBEBEBE
+              25D19C113216323434749A737E371C0E7F4102D4CDCDCD1A12245AF30312C05C
+              2E57840445B55AED77B158EC4E4F4FCF0BD19C161909A161D4B4B9B9E9A8AFAB
+              33984C266D6969A9683919D06F31A7D319767B3C3EFA2D330DB7BF45534A1C2B
+              647070D0423DF37D8BC9A46B6868C8F999CA050B0B0BF139A7334823E1B3DEDE
+              DE9F453829D212A37FA23F12897CD3D6D6C6AA4E9D12D1578BB5972FD9ECEC6C
+              903AF36BFA67BE12E1234829646464E4163DD0B7AEB5B7634611D1C20093817D
+              723242A73748CCBD9D6822920AC170A2E9FF87AB66B3AED022760131E313138C
+              3AF77AB2617644C8F0F0F0259A3DFE309BCD7AB9C329180CB2DF1E3E94CE3FB8
+              7285E9743AE93C576098391C8E0075F2FB8727002E3E25608AA50F474B4B8B2E
+              1FCF84E7D933B6BEBE2E1D38970B70C2A483195470DD438210AC136F9D3D5BD9
+              70E1425E66274A43C459E2B91C60E6C43200AE2224614F08566C2C76582744A8
+              68018EE00ACE22B42F04690756EC935EECF2017004577016A11D214800913B21
+              ED90A20A00B88233B8E35A124281DB4800F39D3B9D24C0159C9181E39AA39EA0
+              FAA01D59AC74878200CE2823A0817BBDDE0FA9B0D92E96852F1B80336A211476
+              9CAAB44E9ACEF4A24D71404147C3AC835352F8092A3B11571CC01D1AB85A8DEA
+              34B3F2B41801EED0C0694E0E8B986281CD0E6E341A15375B1D06766C54369B2D
+              F8DEE5CB69A7AC8D8D0DB6BCBCCCA2B198886486D5D555E900AAABABA5231BD0
+              906175E7CE1D9B35FFF9E85148353D3DBDDDDCD494F661FFC56693C414029595
+              958CEA2271951C7FB95C514E2BA3B854365E9FA135313EEE6F6D6D7D53C4F28A
+              C7F3F36C9E0EA0B1B1915DA2E324F06066C6CF5F78BDD975731182F2AD18A7B2
+              B1E80BA9E3804D718E5D716C282B15E04E65888F53C2751FBBE222AE38803B09
+              F989C39F707B3C0111571C604B4003529419CAE74BB001A6348033BC1518451C
+              4E11255D93F02744BB6200CE545C4D41839430D2EAFE254C16F8134A01B88233
+              3D1FD2FE96240476179C22982CB85602C0159CC11DD77B293C29EC87530493A5
+              D8018EE00ACE22B42F049E1DEC2E38452254B40047703DE833261455F0EC6077
+              C12912215950F3FDAF3F782E07E0068EE02A421212BE1DC6A346A36983DD852D
+              7CB9A8ADAD65E5E5E5D28173B900277083AF78D8244D69F450EA62BD6EB1688B
+              C9E8997238825B5B5B9F26337A92FEDFB89154DF84DD550C0B2538800B7CC454
+              A668CA12776C6CEC778BC5C21697965AABCF9C29988F88E164B7DB51647D4E53
+              EDB7227C04C71A3A05B5A79F3E8DCFCDCDC9B7A777015F311289FCFAAA5F18F8
+              EFF9F375BA347777773FDE69498D8C7BF8B57885E32014FF52CD610897EB36BC
+              15D812D8D1CFE53527D442282390812379DDCD9DB285EC8717260B3C166CED53
+              4F76604319FBC9A78D460E930F2F9E91608C7BE9C533BA37867D82DD17CFE8D9
+              B3A22692F7E21963FF03BA50E8E32EFA2DA90000000049454E44AE426082}
+            FileName = 'D:\Project Source\XGolf\kiosk\Image\bt_plus.png'
+          end>
+        Position.X = 704.000000000000000000
+        Position.Y = 10.000000000000000000
+        RotationAngle = 42.000000000000000000
+        OnClick = Image1Click
+      end
+    end
+    object Rectangle3: TRectangle
+      Fill.Color = claBlack
+      Position.X = 272.000000000000000000
+      Position.Y = 450.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 0.000000000000000000
+      OnClick = Rectangle3Click
+      object Text1: TText
+        Align = Client
+        HitTest = False
+        Size.Width = 241.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        Text = #51200#51109
+        TextSettings.Font.Family = 'Noto Sans CJK KR'
+        TextSettings.Font.Size = 30.000000000000000000
+        TextSettings.FontColor = claWhite
+      end
+    end
+    object cbUseSTX: TCheckBox
+      StyledSettings = [Style, FontColor]
+      Position.X = 71.000000000000000000
+      Position.Y = 395.000000000000000000
+      Size.Width = 162.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'STX/ETX '#49324#50857
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 20.000000000000000000
+    end
+  end
+end

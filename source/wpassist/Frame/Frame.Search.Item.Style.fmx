@@ -1,0 +1,42 @@
+object SearchItemStyle: TSearchItemStyle
+  Size.Width = 600.000000000000000000
+  Size.Height = 50.000000000000000000
+  Size.PlatformDefault = False
+  object Rectangle: TRectangle
+    Align = Client
+    Fill.Color = claWhite
+    Size.Width = 600.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Thickness = 0.000000000000000000
+    OnClick = RectangleClick
+    object txtType: TText
+      HitTest = False
+      Position.X = 216.000000000000000000
+      Position.Y = 16.000000000000000000
+    end
+    object txtName: TText
+      HitTest = False
+      Position.X = 6.000000000000000000
+      Position.Y = -1.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = '1'
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+    object txtTmp: TText
+      HitTest = False
+      Position.X = 232.000000000000000000
+      Size.Width = 361.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = '1'
+      TextSettings.Font.Family = 'Noto Sans CJK KR'
+      TextSettings.Font.Size = 20.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+    end
+  end
+end

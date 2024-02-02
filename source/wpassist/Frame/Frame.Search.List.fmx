@@ -1,0 +1,14 @@
+object FrameSearchList: TFrameSearchList
+  Size.Width = 600.000000000000000000
+  Size.Height = 450.000000000000000000
+  Size.PlatformDefault = False
+  object VertScrollBox: TVertScrollBox
+    Align = Client
+    Size.Width = 600.000000000000000000
+    Size.Height = 450.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 600.000000000000000000
+    Viewport.Height = 450.000000000000000000
+  end
+end
