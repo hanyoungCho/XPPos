@@ -1705,7 +1705,8 @@ begin
 
     { ≈∏ºÆ±‚AD }
     TeeBoxADInfo.Enabled := ReadBool('TeeBoxAD', 'Enabled', False);
-    TeeBoxADInfo.Host    := ReadString('TeeBoxAD', 'Host', CCD_TEEBOX_HOST);
+    //TeeBoxADInfo.Host    := ReadString('TeeBoxAD', 'Host', CCD_TEEBOX_HOST);
+    TeeBoxADInfo.Host    := '192.168.0.212';
     TeeBoxADInfo.DBPort  := ReadInteger('TeeBoxAD', 'DBPort', CCD_TEEBOX_DB_PORT);
     TeeBoxADInfo.DBUser  := CCD_TEEBOX_USER;
     TeeBoxADInfo.DBPwd   := CCD_TEEBOX_PWD;

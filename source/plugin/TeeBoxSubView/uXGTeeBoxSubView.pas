@@ -487,7 +487,10 @@ begin
               Top := nTop
             else
             begin
-              Top := nTop + (nColCnt * nCol div nArcGap);
+              if nArcGap = 0 then
+                Top := nTop
+              else
+                Top := nTop + (nColCnt * nCol div nArcGap);
               Dec(nColCnt);
             end;
 
